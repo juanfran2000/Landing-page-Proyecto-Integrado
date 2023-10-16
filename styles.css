@@ -56,7 +56,7 @@
   display: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
   .navbar ul {
     flex-direction: column;
     align-items: center;
@@ -139,8 +139,10 @@
   padding: 10px 35px;
   font-size: 25px;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 600;
   border-radius: 10px 20px 30px 40px;
+  color: #000000;
 }
 
 .hero-button:hover {
@@ -355,46 +357,7 @@
   margin-top: 10px;
 }
 
-/* Section Contact */
-
-.contact {
-  color: #ffff;
-  display: flex;
-  gap: 80px;
-  align-items: center;
-}
-
-.contact-title {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.contact-info {
-  display: flex;
-  gap: 20px;
-}
-
-.contact-details {
-  font-size: 16px;
-}
-
-.contact-subtitle {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-top: 5px;
-}
-
-.contact-social {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-}
+/* section contact */
 
 /* Estilos para el iframe */
 iframe {
@@ -409,36 +372,160 @@ iframe {
   ); /* Degradado de fondo */
 }
 
-footer {
-  height: 400px;
-  display: flex;
-  justify-content: end;
-  flex-direction: column;
-  align-items: center;
+.contacto {
+  width: 100%;
+  height: 600px;
   background: linear-gradient(to bottom, #000000, #4299e1);
 }
 
-.marca {
-  margin-top: 70px;
+.contacto-principal {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contacto-info {
+  background-color: #1b1a1a;
+  width: 45%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 20px 20px;
+  color: #ffff;
+}
+
+.contacto-info h2 {
+  font-size: 30px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
-.marca h4 {
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
+.contacto-img {
+  border-radius: 20px 20px 20px 20px;
+  background-color: #1b1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 400px;
+}
+.item-contact {
+  display: flex;
+  flex-direction: column;
+  width: 105%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.img-ajuste {
+  height: 90%;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 20px 20px;
 }
 
-@media (max-width: 750px) {
-  .contact {
-    flex-direction: column;
-  }
+.img-contact {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 20px 20px;
+}
+.contacto-contenedor {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
 
-  .contact-info {
+.contact-social {
+  margin-top: 20px;
+  width: 105%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: #1b1a1a;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h4 {
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (max-width: 1300px) {
+  .contacto-contenedor {
     flex-direction: column;
-    gap: 0;
+    justify-content: center;
+    align-items: center;
   }
-  footer {
-    height: 980px;
+  .inframe {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .contacto-img {
+    display: none;
+  }
+  .contacto-info {
+    width: 85%;
+  }
+}
+
+.formulario {
+  background-color: #1b1a1a;
+  height: 780px;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario-disposicion {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.enlace {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.form-button {
+  margin-top: 20px;
+  background-color: #ffff;
+  padding: 10px 45px;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px 20px 30px 40px;
+  color: #000000;
+}
+
+.form-button:hover {
+  background-color: #fc1919;
+  color: #ffffff;
+}
+
+@media (max-width: 950px) {
+  .formulario-disposicion {
+    flex-direction: column;
+    text-align: center;
   }
 }
